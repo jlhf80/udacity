@@ -30,8 +30,7 @@ def gradient_descent(features, values, theta, alpha, num_iterations):
         cost_history.append(cost)
  
 
-    ###########################
-    ### YOUR CODE GOES HERE ###
-    ###########################
+# R^2 function:
+r_squared = 1 - np.sum(np.square(data - predictions)) / np.sum(np.square(data - np.mean(data)))
 
     return theta, pandas.Series(cost_history) # leave this line for the grader
